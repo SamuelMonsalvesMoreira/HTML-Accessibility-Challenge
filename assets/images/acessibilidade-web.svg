@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" role="img" aria-labelledby="titulo descricao">
+  <title id="titulo">Acessibilidade conectada à Web</title>
+  <desc id="descricao">Tela central cercada por quatro cartões: visão, audição, teclado e compreensão.</desc>
+  <rect width="900" height="430" rx="16" fill="#edf4f5"/>
+  <path d="M0 330C168 278 250 395 420 340s279-11 480 32v58H0Z" fill="#dcebed"/>
+  <g fill="none" stroke="#8aaab3" stroke-width="3" stroke-dasharray="7 8">
+    <path d="M250 108 337 164"/><path d="m650 108-87 56"/><path d="m250 322 87-56"/><path d="m650 322-87-56"/>
+  </g>
+  <g>
+    <rect x="318" y="105" width="264" height="220" rx="12" fill="#fff" stroke="#154655" stroke-width="4"/>
+    <path d="M318 143h264" stroke="#154655" stroke-width="4"/>
+    <circle cx="340" cy="124" r="6" fill="#d28b30"/><circle cx="360" cy="124" r="6" fill="#6c8b4f"/><circle cx="380" cy="124" r="6" fill="#7b5b8e"/>
+    <rect x="347" y="169" width="96" height="89" rx="6" fill="#e6f3f6"/>
+    <circle cx="395" cy="201" r="17" fill="#215f72"/>
+    <path d="M364 245c6-24 56-24 62 0" fill="#215f72"/>
+    <path d="M466 177h86M466 201h74M466 225h86M466 249h58" stroke="#52606d" stroke-width="8" stroke-linecap="round"/>
+    <rect x="347" y="280" width="205" height="17" rx="8" fill="#d28b30"/>
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif" text-anchor="middle">
+    <g transform="translate(160 44)">
+      <rect width="180" height="98" rx="12" fill="#fff" stroke="#215f72" stroke-width="3"/>
+      <path d="M50 45c14-18 39-18 54 0-15 18-40 18-54 0Z" fill="none" stroke="#215f72" stroke-width="4"/><circle cx="77" cy="45" r="9" fill="#215f72"/>
+      <text x="130" y="51" fill="#18181b" font-size="18" font-weight="700">Visão</text>
+    </g>
+    <g transform="translate(560 44)">
+      <rect width="180" height="98" rx="12" fill="#fff" stroke="#215f72" stroke-width="3"/>
+      <path d="M75 24c-20 0-27 15-23 29 3 12 15 10 15 22" fill="none" stroke="#215f72" stroke-width="5" stroke-linecap="round"/><path d="M65 41c12-9 23 3 13 12" fill="none" stroke="#215f72" stroke-width="4" stroke-linecap="round"/>
+      <text x="128" y="51" fill="#18181b" font-size="18" font-weight="700">Audição</text>
+    </g>
+    <g transform="translate(160 288)">
+      <rect width="180" height="98" rx="12" fill="#fff" stroke="#215f72" stroke-width="3"/>
+      <rect x="28" y="31" width="76" height="42" rx="5" fill="none" stroke="#215f72" stroke-width="4"/>
+      <path d="M40 43h9m8 0h9m8 0h9m8 0h5M40 56h12m8 0h12m8 0h16M44 67h48" stroke="#215f72" stroke-width="3" stroke-linecap="round"/>
+      <text x="140" y="56" fill="#18181b" font-size="17" font-weight="700">Teclado</text>
+    </g>
+    <g transform="translate(560 288)">
+      <rect width="180" height="98" rx="12" fill="#fff" stroke="#215f72" stroke-width="3"/>
+      <circle cx="65" cy="49" r="27" fill="#e6f3f6" stroke="#215f72" stroke-width="4"/>
+      <path d="M52 48l9 9 17-20" fill="none" stroke="#215f72" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="132" y="45" fill="#18181b" font-size="15" font-weight="700">Conteúdo</text><text x="132" y="65" fill="#18181b" font-size="15" font-weight="700">claro</text>
+    </g>
+  </g>
+</svg>
+

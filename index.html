@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Artigo educativo sobre acessibilidade na Web, HTML semântico, WCAG e tecnologias assistivas.">
+    <title>Acessibilidade na Web | Wiki Inclusiva</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#conteudo-principal">Ir para o conteúdo principal</a>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="Wiki Inclusiva — página inicial">
+                <img src="assets/images/logo-wiki-inclusiva.svg" width="54" height="54" alt="">
+                <span class="brand-text">
+                    <strong>Wiki Inclusiva</strong>
+                    <small>Conhecimento acessível para todos</small>
+                </span>
+            </a>
+
+            <span class="header-label">Artigo em destaque</span>
+        </div>
+    </header>
+
+    <div class="accent-bar" aria-hidden="true"></div>
+
+    <div class="page-layout">
+        <aside class="sidebar" aria-labelledby="menu-titulo">
+            <nav aria-label="Conteúdos relacionados">
+                <p class="nav-title" id="menu-titulo">Conteúdos</p>
+                <ul>
+                    <li><a href="#acessibilidade" aria-current="page">Acessibilidade na Web</a></li>
+                    <li><a href="#html-semantico">HTML semântico</a></li>
+                    <li><a href="#wcag">Diretrizes WCAG</a></li>
+                    <li><a href="#tecnologias-assistivas">Tecnologias assistivas</a></li>
+                    <li><a href="#boas-praticas">Boas práticas</a></li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-note" role="note" aria-labelledby="projeto-titulo">
+                <p class="nav-title" id="projeto-titulo">Sobre o projeto</p>
+                <p>Página criada para o desafio de HTML do módulo 3 da DIO.</p>
+            </div>
+        </aside>
+
+        <main id="conteudo-principal" tabindex="-1">
+            <article>
+                <header class="article-header">
+                    <p class="eyebrow">Tecnologia e inclusão</p>
+                    <h1>Acessibilidade na Web</h1>
+                    <p class="lead">Práticas que permitem a pessoas com diferentes habilidades perceber, compreender, navegar e interagir com conteúdos digitais.</p>
+                    <p class="article-meta">Última atualização: <time datetime="2026-09-22">22 de setembro de 2026</time> · Leitura de 8 minutos</p>
+                </header>
+
+                <figure class="hero-figure">
+                    <img src="assets/images/acessibilidade-web.svg" width="900" height="430" alt="Ilustração de uma página Web conectada a recursos de visão, audição, teclado e compreensão.">
+                    <figcaption>A acessibilidade considera diferentes formas de perceber e utilizar a Web.</figcaption>
+                </figure>
+
+                <section id="acessibilidade" aria-labelledby="acessibilidade-titulo">
+                    <h2 id="acessibilidade-titulo">O que é acessibilidade na Web?</h2>
+                    <p>Acessibilidade na Web significa criar sites, ferramentas e tecnologias que possam ser utilizados por pessoas com deficiência. Isso inclui pessoas com deficiência visual, auditiva, física, de fala, cognitiva ou neurológica.</p>
+                    <p>Quando um conteúdo é bem estruturado, ele pode ser acessado por teclado, interpretado por leitores de tela, ampliado sem perda de informação e compreendido em diferentes contextos. Essas melhorias também ajudam pessoas idosas, usuários de dispositivos móveis e pessoas com limitações temporárias ou situacionais.</p>
+
+                    <blockquote cite="https://www.w3.org/WAI/fundamentals/accessibility-intro/">
+                        <p>“O poder da Web está em sua universalidade. O acesso por todos, independentemente de deficiência, é um aspecto essencial.”</p>
+                        <footer>— Tim Berners-Lee, criador da World Wide Web</footer>
+                    </blockquote>
+                </section>
+
+                <section id="wcag" aria-labelledby="wcag-titulo">
+                    <h2 id="wcag-titulo">Os quatro princípios da WCAG</h2>
+                    <p>A <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> organiza suas recomendações em quatro princípios. Um conteúdo acessível deve ser perceptível, operável, compreensível e robusto.</p>
+
+                    <div class="principles" aria-label="Quatro princípios da WCAG">
+                        <section class="principle-card">
+                            <span aria-hidden="true">01</span>
+                            <h3>Perceptível</h3>
+                            <p>A informação deve poder ser percebida de mais de uma forma, com textos alternativos, legendas e contraste suficiente.</p>
+                        </section>
+                        <section class="principle-card">
+                            <span aria-hidden="true">02</span>
+                            <h3>Operável</h3>
+                            <p>Todas as funções devem funcionar por teclado e oferecer tempo e orientação suficientes para a navegação.</p>
+                        </section>
+                        <section class="principle-card">
+                            <span aria-hidden="true">03</span>
+                            <h3>Compreensível</h3>
+                            <p>Textos, instruções e comportamentos precisam ser claros, previsíveis e ajudar a evitar erros.</p>
+                        </section>
+                        <section class="principle-card">
+                            <span aria-hidden="true">04</span>
+                            <h3>Robusto</h3>
+                            <p>O código deve ser compatível com navegadores atuais, futuros e diferentes tecnologias assistivas.</p>
+                        </section>
+                    </div>
+                </section>
+
+                <section id="html-semantico" aria-labelledby="semantica-titulo">
+                    <h2 id="semantica-titulo">HTML semântico como fundamento</h2>
+                    <p>Elementos semânticos descrevem o papel de cada região da página. Em vez de usar apenas elementos genéricos, tags como <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code> e <code>&lt;footer&gt;</code> comunicam a estrutura do documento.</p>
+
+                    <div class="comparison" role="group" aria-label="Comparação entre marcação genérica e semântica">
+                        <div>
+                            <h3>Estrutura genérica</h3>
+                            <pre><code>&lt;div class="menu"&gt;
+  &lt;div&gt;Início&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                        </div>
+                        <div>
+                            <h3>Estrutura semântica</h3>
+                            <pre><code>&lt;nav aria-label="Principal"&gt;
+  &lt;a href="/"&gt;Início&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+                        </div>
+                    </div>
+
+                    <p>A semântica cria pontos de referência para leitores de tela, melhora a navegação por teclado e torna o código mais fácil de manter. O <abbr title="Accessible Rich Internet Applications">ARIA</abbr> deve complementar o HTML somente quando a semântica nativa não for suficiente.</p>
+                </section>
+
+                <section id="boas-praticas" aria-labelledby="praticas-titulo">
+                    <h2 id="praticas-titulo">Acessibilidade na prática</h2>
+                    <p>Uma página inclusiva nasce de decisões simples aplicadas desde o início do projeto.</p>
+
+                    <div class="table-wrapper" tabindex="0" role="region" aria-labelledby="tabela-legenda">
+                        <table>
+                            <caption id="tabela-legenda">Boas práticas e seus principais benefícios</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Prática</th>
+                                    <th scope="col">Como aplicar</th>
+                                    <th scope="col">Benefício</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Texto alternativo</th>
+                                    <td>Descrever imagens informativas no atributo <code>alt</code>.</td>
+                                    <td>Comunica o conteúdo visual a quem usa leitor de tela.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Teclado</th>
+                                    <td>Manter links e controles alcançáveis com <kbd>Tab</kbd>.</td>
+                                    <td>Atende quem não utiliza mouse ou tela sensível ao toque.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Contraste</th>
+                                    <td>Garantir boa diferença entre texto e fundo.</td>
+                                    <td>Melhora a leitura em baixa visão e ambientes muito claros.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Formulários</th>
+                                    <td>Associar cada campo a um <code>&lt;label&gt;</code> descritivo.</td>
+                                    <td>Explica o propósito dos campos a todos os usuários.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Multimídia</th>
+                                    <td>Oferecer legendas, transcrições e controles visíveis.</td>
+                                    <td>Disponibiliza informação sonora por meio de texto.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section id="tecnologias-assistivas" aria-labelledby="tecnologias-titulo">
+                    <h2 id="tecnologias-titulo">Tecnologias assistivas</h2>
+                    <p>Tecnologias assistivas ajudam pessoas a interagir com computadores e conteúdos digitais. Elas funcionam melhor quando a página utiliza padrões da Web corretamente.</p>
+                    <ul class="feature-list">
+                        <li><strong>Leitores de tela:</strong> transformam texto e estrutura em voz ou braille.</li>
+                        <li><strong>Ampliadores de tela:</strong> aumentam conteúdo e ajustam cores para facilitar a leitura.</li>
+                        <li><strong>Controle por voz:</strong> permite navegar e executar comandos por fala.</li>
+                        <li><strong>Teclados alternativos e acionadores:</strong> apoiam pessoas com mobilidade reduzida.</li>
+                    </ul>
+                </section>
+
+                <section id="beneficios" aria-labelledby="beneficios-titulo">
+                    <h2 id="beneficios-titulo">Benefícios para todos</h2>
+                    <p>Acessibilidade não é um recurso isolado. Legendas ajudam quem está em um ambiente barulhento, bom contraste melhora o uso sob luz intensa, navegação por teclado aumenta a produtividade e uma estrutura clara favorece mecanismos de busca.</p>
+                    <p class="callout"><strong>Essencial para alguns, útil para todos:</strong> uma Web acessível oferece mais autonomia, alcance e qualidade de uso.</p>
+                </section>
+
+                <section id="referencias" aria-labelledby="referencias-titulo">
+                    <h2 id="referencias-titulo">Referências</h2>
+                    <ol class="references">
+                        <li><a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/" target="_blank" rel="noopener noreferrer">W3C WAI — Introdução à acessibilidade na Web <span class="sr-only">(abre em nova aba)</span></a></li>
+                        <li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer">W3C WAI — Visão geral da WCAG 2 <span class="sr-only">(abre em nova aba)</span></a></li>
+                        <li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/glance/" target="_blank" rel="noopener noreferrer">W3C WAI — WCAG 2 em resumo <span class="sr-only">(abre em nova aba)</span></a></li>
+                        <li><a href="https://developer.mozilla.org/pt-BR/docs/Glossary/Semantics" target="_blank" rel="noopener noreferrer">MDN Web Docs — Semântica <span class="sr-only">(abre em nova aba)</span></a></li>
+                    </ol>
+                </section>
+            </article>
+        </main>
+
+        <aside class="anchors" aria-labelledby="sumario-titulo">
+            <nav aria-label="Seções deste artigo">
+                <h2 id="sumario-titulo">Neste artigo</h2>
+                <ol>
+                    <li><a href="#acessibilidade">O que é acessibilidade?</a></li>
+                    <li><a href="#wcag">Princípios da WCAG</a></li>
+                    <li><a href="#html-semantico">HTML semântico</a></li>
+                    <li><a href="#boas-praticas">Boas práticas</a></li>
+                    <li><a href="#tecnologias-assistivas">Tecnologias assistivas</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#referencias">Referências</a></li>
+                </ol>
+            </nav>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div>
+            <img src="assets/images/logo-wiki-inclusiva.svg" width="42" height="42" alt="">
+            <p><strong>Wiki Inclusiva</strong><br><small>Projeto educacional sem fins comerciais.</small></p>
+        </div>
+        <p>Conteúdo criado para praticar estrutura, semântica e acessibilidade em HTML.</p>
+    </footer>
+</body>
+</html>
+

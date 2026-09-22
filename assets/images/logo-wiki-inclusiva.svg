@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="titulo descricao">
+  <title id="titulo">Símbolo da Wiki Inclusiva</title>
+  <desc id="descricao">Livro aberto com um círculo representando acesso universal ao conhecimento.</desc>
+  <circle cx="32" cy="32" r="30" fill="#e6f3f6" stroke="#154655" stroke-width="2"/>
+  <path d="M14 19c7-2 13 0 18 4v25c-5-4-11-6-18-4V19Z" fill="#fff" stroke="#154655" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M50 19c-7-2-13 0-18 4v25c5-4 11-6 18-4V19Z" fill="#fff" stroke="#154655" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="32" cy="15" r="5" fill="#d28b30" stroke="#154655" stroke-width="2"/>
+</svg>
+
