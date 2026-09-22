@@ -51,7 +51,9 @@ wiki-inclusiva/
 │       └── logo-wiki-inclusiva.svg
 ├── screenshots/
 │   ├── desktop-preview.png
-│   └── mobile-preview.png
+│   ├── desktop.png
+│   ├── mobile-preview.png
+│   └── mobile.png
 ├── index.html
 └── README.md
 ```
